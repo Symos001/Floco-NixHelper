@@ -1,0 +1,46 @@
+[[presets]]
+name = "Node Backend"
+packages = ["pkgs.nodejs_20", "pkgs.pnpm", "pkgs.docker", "pkgs.docker-compose"]
+
+[[presets]]
+name = "Node Frontend"
+packages = ["pkgs.nodejs_20", "pkgs.pnpm", "pkgs.vite"]
+
+[[presets]]
+name = "Fullstack JS"
+packages = ["pkgs.nodejs_20", "pkgs.pnpm", "pkgs.docker", "pkgs.docker-compose", "pkgs.vite"]
+
+[[presets]]
+name = "Python Backend"
+packages = ["pkgs.python311", "pkgs.poetry"]
+
+[[presets]]
+name = "Rust Dev"
+packages = ["pkgs.rustc", "pkgs.cargo", "pkgs.clippy", "pkgs.rustfmt"]
+
+[[presets]]
+name = "Go Dev"
+packages = ["pkgs.go", "pkgs.delve"]
+
+[[presets]]
+name = "Java Spring Boot"
+packages = ["pkgs.jdk17", "pkgs.maven", "pkgs.gradle"]
+
+[[presets]]
+name = ".NET 10 / C# 13"
+packages = ["pkgs.dotnet-sdk_10", "pkgs.dotnet-runtime_10", "pkgs.omnisharp-roslyn", "pkgs.nuget"]
+
+[[presets]]
+name = "Flutter Dev"
+packages = [
+    "flutter",           # O SDK do Flutter
+    "dart",              # Linguagem Dart
+    "git",               # Necessário para o flutter doctor
+    "pkg-config",        # Dependências de compilação
+    "gtk3",              # Necessário se for compilar para Linux Desktop
+    "glib"
+]
+
+[[presets]]
+name = "Custom"
+packages = []
